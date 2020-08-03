@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
   box-sizing: border-box;
@@ -10,17 +11,32 @@ body {
   background: #45badd;
 }
 
-.joke__container {
+.joke {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url('../img/robot.gif');
   background-size: contain;
   background-position: left-center;
   background-repeat: no-repeat;
+}
+
+.joke__container {
+  width: auto;
+  max-width: 700px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.joke__button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 button {
@@ -47,6 +63,25 @@ button:active {
 button:disabled {
   cursor: default;
   filter: brightness(30%);
+}
+
+.joke__subtitles{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(65, 105, 225, 0.5);
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#subtitles {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 /* Media query: Tablet or smaller */

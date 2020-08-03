@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-    <div class="joke__container">
-        <button id="button">Tell me a joke!</button>
-        <audio id="audio" controls hidden></audio>
+    <div class="joke">
+        <div class="joke__container">
+            <div class="joke__button">
+                <button id="button">Tell me a joke!</button>
+            </div>
+            <audio id="audio" controls hidden></audio>
+            <div class="joke__subtitles" hidden>
+                <span id="subtitles"></span>
+            </div>
+        </div>
     </div>
     <!-- Script -->
+    <script src="public/js/voicerss-sdk.js"></script>
     <script src="public/js/script.js"></script>
 </body>
 </html>
